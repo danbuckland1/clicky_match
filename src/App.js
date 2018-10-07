@@ -1,21 +1,47 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component }from "react";
+import ClickCard from "./components/ClickCard";
+import Wrapper from "./components/Wrapper";
+import toon from "./toons.json";
+import "./App.css";
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
+  state = {
+    toon
+  };
+  
+  rottenBanana(key){
+    //TODO change the state.
+    let bananas = this.state.banana;
+    for(let i=0; i < bananas.length; i++){
+      if(bananas[i] === key){
+        //Splice is used to remove a single element from bananas.
+        bananas.splice(i, 1);
+      }
+    }
+    this.setState({
+      banana: bananas
+    });
+    console.log("rottenBanana");
   }
-}
+  render(){
+    return (
+  <Wrapper>
+    <h1 className="title">Clicky Game!</h1>
+
+    {
+      this.state.toon.map(toon => 
+        <ClickCard
+        key={toon.id}
+        id={toon}
+        image={toon.image}
+
+      />
+      )
+    }
+
+  </Wrapper>
+    )
+  }
+};
 
 export default App;
