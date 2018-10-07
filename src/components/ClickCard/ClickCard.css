@@ -1,4 +1,4 @@
-.card {
+/* .card {
     background: #fff;
     border-radius: 2px;
     height: 325px;
@@ -7,4 +7,13 @@
     width: 325px;
     box-shadow: 0 3px 6px #999, 0 3px 6px #999;
     text-align: left;
+  } */
+
+  .img-container {
+    height: 60%;
+    overflow: hidden;
+    text-align: center;
+  }
+  .card .img-container > img {
+    width: 60%
   }
