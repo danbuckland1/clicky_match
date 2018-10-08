@@ -11,8 +11,11 @@
 
   .img-container {
     height: 60%;
+    width: 40%;
+    position: inline;
     overflow: hidden;
     text-align: center;
+
   }
   .card .img-container > img {
     width: 60%
