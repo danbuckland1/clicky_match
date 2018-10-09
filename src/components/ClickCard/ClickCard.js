@@ -1,20 +1,15 @@
-import React, {Component} from "react";
-import "./ClickCard.css"
-
-class ClickCard extends Component {
-    render(){
-        return (
-            <div className="card">
-            <div className="img-container">
-              <img alt={this.props.name} src={this.props.image} />
-            </div>
-          </div>
-        );
-    }
-}
+import React from "react";
+import "./ClickCard.css";
 
 
-
-
+const ClickCard = props => (
+    <div 
+        className="card" 
+        value={props.id}
+        onClick = {() => props.handleClick(props.id)}
+    >
+        <img alt={props.name} src={props.image}  />
+    </div>
+);
 
 export default ClickCard;

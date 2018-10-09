@@ -1,0 +1,26 @@
+h1, h3, p {
+    text-align: center;
+
+}
+
+h1, h3 {
+    font-family: 'Alfa Slab One';
+    color: white;
+    text-shadow: 3px 3px 2px slategrey;
+}
+
+h3 {
+    font-style: italic;
+    font-size: 40px;
+}
+
+.lead {
+    color: white;
+    font-weight: bold;
+    text-shadow: 3px 3px 2px slategrey;
+}
+.jumbotron {
+    background-image: url("../../images/80scifibg.jpg");
+    box-shadow: 3px 3px 10px slategrey
+    
+}
