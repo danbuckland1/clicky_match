@@ -16,6 +16,6 @@ https://fast-reef-97871.herokuapp.com/
 <img width="1440" alt="clickymatchscreenshot" src="https://user-images.githubusercontent.com/36943035/50048094-83065900-0091-11e9-8fe6-8af55613d638.png">
 
 
-##Contributors
+## Contributors
 
 Dan Buckland
